@@ -1,17 +1,17 @@
 @import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&family=Roboto&display=swap');
 
+/* Début Nav Bar */
 .nav{
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 102, 0);
     justify-content: space-between;
-    margin: 0px 100px;
+    margin: 20px 100px;
+    border-bottom: solid 0.5px rgb(196, 196, 196);
 }
 
 .nav img{
-    padding: 0px;
-    margin: 0px;
-    width: 200px;
+    width: 250px;
 }
 
 .lien{
@@ -25,4 +25,108 @@
 .lien a{
     text-decoration: none;
     color: black;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* Fin Nav Bar */
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Début Content */
+
+.midle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12% 100px;
+    vertical-align: middle;
+}
+
+/* Début slogan */
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: orange;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+}
+.slogan p{
+    margin-bottom: 10px;
+}
+/* Fin slogan */
+
+/* Début Search bar */
+.searchBar{
+    justify-content: end;
+}
+
+.searchBar input{
+    width: 400px;
+    border-radius: 15px;
+    border: solid 0.5px rgb(196, 196, 196);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+/* Fin Search bar */
+
+/* Début filtres searchBar */
+
+#menuAccordeon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 17%;
+}
+
+#menuAccordeon ul {
+    background-color: red;
+}
+
+#menuAccordeon li li {
+    max-height:0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+#menuAccordeon button {
+    color:  black;
+    border: solid 0.5px rgb(196, 196, 196);
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin-right: 5px;
+}
+
+#menuAccordeon li:active li {
+    max-height: 15em;
+}
+
+.information{
+    margin: 20px 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+
+/* Fin Content */
+
+/* ---------------------------------------------------------------------------------- */
