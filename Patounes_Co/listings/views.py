@@ -6,6 +6,9 @@ def accueil(request):
     bands = Band.objects.all()
     return render(request, 'listings/accueil.html', {'bands': bands})
 
-
 def about(request):
     return HttpResponse('<h1>A propos</1> <p>Nous adorons Patounes & Co</p>')
+
+def adopte(request):
+    bands = Band.objects.all()
+    return render(request, 'listings/adopte.html')

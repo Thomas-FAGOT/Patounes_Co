@@ -1,12 +1,28 @@
-
 {% extends 'listings/base.html' %}
-{% block content %}
-<h1>Hello django !</h1>
-<p>Mes groupes préférés sont :<p>
-    <ul>
-        {% for band in bands %}
-        <li>{{ band.name }}</li>
-        {% endfor %}
-    </ul>
-</p>
-{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsum quo nulla officiis nisi aperiam molestiae iure, inventore tempora blanditiis quos, voluptas quasi consectetur natus explicabo accusamus eligendi fugiat illum?</p>
+</body>
+</html>
+
+<!--
+    {% block test %}
+        <h1>Hello django !</h1>
+        <p>Mes groupes préférés sont :<p>
+            <ul>
+                {% for band in bands %}
+                <li>{{ band.name }}</li>
+                {% endfor %}
+            </ul>
+        </p>
+    {% endblock %}
+-->

@@ -20,6 +20,7 @@ from listings import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accueil/', views.accueil),
+    path('', views.accueil),
     path('about-us/', views.about),
+    path('adopte/', views.adopte),
 ]
