@@ -12,13 +12,15 @@
 </head>
 <body>
     <nav class="nav">
-        <img src="{% static 'images/Logo.png'%}" alt="Logo Patounes & Co">
+        <a href="http://127.0.0.1:8000" id="test"><img src="{% static 'images/Logo.png'%}" alt="Logo Patounes & Co"></a>
         <div class="lien">
-            <a href="adopte">J'adopte</a>
-            <a href="actualite">Actualités</a>
-            <a href="apropos">A propos</a>
+            <a href='http://127.0.0.1:8000/adopte/'>J'adopte</a>
+            <a href="http://127.0.0.1:8000/actualite/">Actualités</a>
+            <a href="http://127.0.0.1:8000/a propos/">A propos</a>
             <span class="material-symbols-rounded">account_circle</span>
         </div>
     </nav>
+    {%block content%}
+    {%endblock%}
 </body>
 </html>

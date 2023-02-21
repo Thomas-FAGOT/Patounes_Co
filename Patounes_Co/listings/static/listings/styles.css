@@ -9,8 +9,13 @@
 }
 
 .nav img{
-    width: 15%;
-    height: 15%;
+    padding: 0px;
+    margin: 0px;
+    width: 200px;
+}
+
+#id{
+    background-color: rgb(68, 0, 255);
 }
 
 .lien{
