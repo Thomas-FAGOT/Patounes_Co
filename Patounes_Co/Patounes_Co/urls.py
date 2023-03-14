@@ -24,5 +24,6 @@ urlpatterns = [
     path('adopte/', views.adopte),
     path('actualite/', views.actualite),
     path('a propos/', views.aPropos),
-
+    path('inscription/', views.inscription),
+    path('connexion/', views.connexion),
 ]

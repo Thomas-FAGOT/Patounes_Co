@@ -1,10 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from listings.models import Band
 
 def accueil(request):
-    bands = Band.objects.all()
-    return render(request, 'listings/accueil.html', {'bands': bands})
+    return render(request, 'listings/accueil.html')
 
 def adopte(request):
     return render(request, 'listings/adopte.html')
@@ -14,3 +11,9 @@ def actualite(request):
     
 def aPropos(request):
     return render(request, 'listings/aPropos.html')
+
+def inscription(request):
+    return render(request, 'listings/inscription.html')
+
+def connexion(request):
+    return render(request, 'listings/connexion.html')

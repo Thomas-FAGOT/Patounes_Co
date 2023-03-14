@@ -10,7 +10,61 @@
 </head>
 <body>
     {%block content%}
-    <h1>A propos</h1>
+    <div class="title">
+        <div class="slogan">
+            <p>NOTRE ENGAGEMENT AUPRÈS DES ANIMAUX</p>
+        </div>
+        <P>Découvrez l'histoire de Patounes & Co</P>
+    </div>
+    <div class="content">
+        <div class="origines">
+            <img src="{% static 'images/CarreBlanc.jpg'%}" alt="carré blanc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum ac dolor non tempor. Donec in augue tristique, volutpat est id, egestas nunc. Phasellus nec risus vestibulum, hendrerit lorem sed, maximus lectus. Etiam gravida feugiat risus, et vehicula dui luctus vel. Vivamus dolor nisl, imperdiet ac tellus id, ultricies finibus mi. Fusce vestibulum dolor metus, quis aliquam est rutrum mattis. Donec tincidunt nisl neque, eu elementum dui pretium ac. Sed rutrum, sem eget auctor varius, augue mi gravida orci, in viverra metus sem sit amet nibh. Phasellus lectus orci, condimentum a convallis non, consectetur nec metus. Donec ac lacus sapien. Cras pellentesque interdum interdum.</p>
+        </div>
+        <div class="localisation">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum ac dolor non tempor. Donec in augue tristique, volutpat est id, egestas nunc. Phasellus nec risus vestibulum, hendrerit lorem sed, maximus lectus. Etiam gravida feugiat risus, et vehicula dui luctus vel. Vivamus dolor nisl, imperdiet ac tellus id, ultricies finibus mi. Fusce vestibulum dolor metus, quis aliquam est rutrum mattis. Donec tincidunt nisl neque, eu elementum dui pretium ac. Sed rutrum, sem eget auctor varius, augue mi gravida orci, in viverra metus sem sit amet nibh. Phasellus lectus orci, condimentum a convallis non, consectetur nec metus. Donec ac lacus sapien. Cras pellentesque interdum interdum.</p>
+            <img src="{% static 'images/CarreBlanc.jpg'%}" alt="carré blanc">
+        </div>
+    </div>
+    <div class="contacter">
+        <p>Nous contacter</p>
+        <p>V</p>
+    </div>
+    <div class="form">
+        <div class="left">
+            <input type="text" name="nom" id="nom" placeholder="Nom">
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+            <input type="text" name="email" id="email" placeholder="E-mail">
+            <p>Etes vous une association ou un particulier ?</p>
+            <div class="radio">
+                <input type="radio" name="association" id="association"> Association
+                <input type="radio" name="particulier" id="particulier"> Particulier
+            </div>
+        </div>
+        <div class="right">
+            <input type="text" name="message" id="message" placeholder="Message">
+        </div>
+    </div>
+    <div class="envoyerForm">
+        <input type="submit" value="ENVOYER">
+    </div>
+    <footer>
+        <div class="lien">
+            <a href='http://127.0.0.1:8000'>Accueil</a>
+            <a href='http://127.0.0.1:8000/adopte/'>J'adopte</a>
+            <a href="http://127.0.0.1:8000/actualite/">Actualités</a>
+            <a href="http://127.0.0.1:8000/a propos/">A propos</a>
+        </div>
+        <div class="legal">
+            <p>Mention légales</p>
+            <p>Conditions d'utilisation</p>
+        </div>
+        <div class="nous">
+            <p>A propos de nous</p>
+            <p>Partenaires</p>
+            <p>Programme d'affiliation</p>
+        </div>
+    </footer>
     {%endblock%}
 </body>
 </html>
