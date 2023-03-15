@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +12,20 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <a href="http://127.0.0.1:8000" id="test"><img src="{% static 'images/Logo.png'%}" alt="Logo Patounes & Co"></a>
-            <ul>
+        <nav>
+            <a href="http://127.0.0.1:8000" id="logo"><img src="{% static 'images/Logo.png'%}" alt="Logo Patounes & Co"></a>
+            <ul id="niveau-1">
                 <li><a href='http://127.0.0.1:8000/adopte/'>J'adopte</a></li>
                 <li><a href="http://127.0.0.1:8000/actualite/">Actualités</a></li>
                 <li><a href="http://127.0.0.1:8000/a propos/">A propos</a></li>
                 <li>
                     <a href="#">Profil</a>
-                    <ul class="sub-menu">
+                    <ul id="niveau-2">
                         <li><a href="#">Profil</a></li>
                         <li><a href="#">Notifications</a></li>
                         <li><a href="#">Favoris</a></li>
                         <li><a href="#">Réglages</a></li>
-                        <li><a href="http://127.0.0.1:8000/connexion/">Se connecter</a></li>
+                        <li><a href="http://127.0.0.1:8000/connexion/" class="bouton">Se connecter</a></li>
                     </ul>
                 </li>
             </ul>

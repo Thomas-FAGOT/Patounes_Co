@@ -20,26 +20,29 @@
         <div class="searchBar">
             <input type="text" placeholder="recherche">
             <button type="submit" id="submit">Rechercher</button>
-            <ul id="menuAccordeon">
-                <li><button>Catégories</button>
-                <ul>
-                    <!--Boucle sur toute les catégorie d'annimaux en base-->
-                    <li>âne</li>
-                    <li>Chient</li>
-                    <li>Chat</li>
-                    <li>Cochon</li>
-                </ul>
+            <ul id="filtre">
+                <li class="filtre">
+                    <a href="#">Catégorie</a>
+                    <ul class="sub-menu">
+                        <!--Boucle sur toute les catégorie d'annimaux en base-->
+                        <li>âne</li>
+                        <li>Chient</li>
+                        <li>Chat</li>
+                        <li>Cochon</li>
+                    </ul>
                 </li>
-                <li><button>Tailles</button>
-                    <ul>
+                <li class="filtre">
+                    <a href="#">Tailles</a>
+                    <ul class="sub-menu">
                         <!--Boucle sur toute les tailles d'annimaux en base-->
                         <li>Petit</li>
                         <li>Moyen</li>
                         <li>Grand</li>
                     </ul>
                 </li>
-                <li><button>Viles ou CP</button>
-                    <ul>
+                <li class="filtre">
+                    <a href="#">Villes ou CP</a>
+                    <ul class="sub-menu">
                         <!--Boucle sur toute les villes ou CP en base-->
                     </ul>
                 </li>

@@ -1,58 +1,61 @@
 @import url('reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&family=Roboto&display=swap');
 
+/* ------------ Générale ------------ */
 body{
     font-family: 'Roboto', sans-serif;
 }
-
-/* Début Nav Bar */
-
 a {
     text-decoration: none;
     color: black;
 }
-
-.nav {
-    margin: 0 auto;
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav img{
-    width: 175px;
-}
-
 header {
     border-bottom: 1px solid #eee;
 }
-
-header ul {
+.bouton{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F3701F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+/* Début Nav Bar */
+nav{
     display: flex;
+    justify-content: space-between;
+    margin: 10px 100px ;
+}
+nav img{
+    width: 175px;
+}
+nav #niveau-1{
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
-
-header li {
+nav li {
     margin: 10px;
 }
-
-header li a:hover {
-    background-color: #F3701F;
-    color: white;
-}
-
-.sub-menu {
+#niveau-2 {
     display: none;
     position: absolute;
+    top: 55px;
+    right: 50px;
     background-color: white;
     border-radius: 20px;
     border: 1px solid #eee;
+    padding: 10px;
+}
+nav li{
+    padding: 10px;
 }
 
-header li:hover .sub-menu{
+nav li:hover #niveau-2{
     display: flex;
     flex-direction: column;
 }
+
 /* Fin Nav Bar */
 
 /* ---------------------------------------------------------------------------------- */
@@ -106,34 +109,29 @@ header li:hover .sub-menu{
 
 /* Début filtres searchBar */
 
-#menuAccordeon{
+#filtre {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 17%;
 }
 
-#menuAccordeon ul {
-    background-color: #F3701F;
+#filtre a {
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    padding: 5px 10px;
 }
 
-#menuAccordeon li li {
-    max-height:0;
-    overflow: hidden;
-    transition: all .5s;
+#filtre li:hover .sub-menu{
+    display: flex;
+    flex-direction: column;
 }
 
-#menuAccordeon li:hover li {
-    max-height: 15em;
-}
-
-#menuAccordeon button {
-    color:  black;
-    border: solid 0.5px rgb(196, 196, 196);
-    border-radius: 15px;
-    padding: 5px 20px;
-    margin-right: 5px;
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #eee;
 }
 
 .information{
