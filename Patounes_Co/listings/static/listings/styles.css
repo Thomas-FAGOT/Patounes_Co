@@ -6,30 +6,52 @@ body{
 }
 
 /* Début Nav Bar */
-.nav{
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    margin: 0 auto;
+    width: 1000px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 20px 100px;
-    border-bottom: solid 0.5px rgb(196, 196, 196);
 }
 
 .nav img{
-    width: 250px;
+    width: 175px;
 }
 
-.nav .lien{
+header {
+    border-bottom: 1px solid #eee;
+}
+
+header ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 300px;
 }
 
-.nav .lien a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
+header li {
+    margin: 10px;
+}
+
+header li a:hover {
+    background-color: #F3701F;
+    color: white;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+
+header li:hover .sub-menu{
+    display: flex;
+    flex-direction: column;
 }
 /* Fin Nav Bar */
 
