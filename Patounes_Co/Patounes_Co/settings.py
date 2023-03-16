@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'listings',
+    'posts.apps.PostsConfig',
+    'animals.apps.AnimalsConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +79,12 @@ WSGI_APPLICATION = 'Patounes_Co.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'patounes',
+        'USER': 'root',
+        'PASSWORD': 'Test@1234',
+        'HOST': '',
+        'PORT': '3306'
     }
 }
 

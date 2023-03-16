@@ -11,6 +11,14 @@
 <body>
     {%block content%}
     <h1>Actualité</h1>
+    <h2>Il y a {{ message }}</h2>
+    <ul>
+        {% for post in posts%}
+        <li>
+            <p>{{ post.title }}</p>
+        </li>
+        {% endfor %}
+    </ul>
     {%endblock%}
 </body>
 </html>
