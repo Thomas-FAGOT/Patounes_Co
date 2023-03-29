@@ -82,12 +82,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'patounes',
         'USER': 'root',
-        'PASSWORD': 'Test@1234',
+        'PASSWORD': 'clbaTHanga_29',
         'HOST': '',
         'PORT': '3306'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
