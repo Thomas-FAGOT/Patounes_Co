@@ -9,7 +9,12 @@
 </head>
 <body> 
     {%block content%}
-    <h1>Adopte</h1>
+    <h1>Adopte</h1><br>
+    <ul>
+        {% for item in data %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
     {%endblock%}
 </body>
 </html>

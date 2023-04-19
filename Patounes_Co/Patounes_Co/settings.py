@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'listings',
     'posts.apps.PostsConfig',
     'animals.apps.AnimalsConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
