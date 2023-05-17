@@ -1,4 +1,5 @@
 {% extends 'listings/base.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +10,18 @@
 </head>
 <body> 
     {%block content%}
-    <h1>Adopte</h1><br>
-    <ul>
-        {% for item in data %}
-          <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
+    <div class="container">
+      {% for item in data %}
+      <div class="profil">
+        <img id="photo_animal" src="{% static 'images/chat.jpg' %}" alt="" role="presentation">
+        <p>{{ item.nom }}</p>
+        <p>{{ item.age }}</p>
+        <p>{{ item.lieu }}</p>
+        <p>{{ item.favorit }}</p>
+        <a href="">Voir le profil</a>
+      </div>
+      {% endfor %}
+    </div>
     {%endblock%}
 </body>
 </html>

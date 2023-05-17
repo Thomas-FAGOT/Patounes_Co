@@ -5,7 +5,7 @@ import requests
 
 def index(request):
 
-    url = "http://localhost:3001/animals"
+    url = "http://localhost:3001/adopte"
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()

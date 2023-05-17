@@ -251,3 +251,28 @@ footer .lien a{
     color: black;
     margin-top: 10px;
 }
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Page j'adopte */
+
+#photo_animal{
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(198, 197, 197);
+  }
+  
+  .profil {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px ;
+    text-align: center;
+    background-color: white;
+  }
